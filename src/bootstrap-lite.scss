@@ -1,0 +1,18 @@
+// Bootstrap 5, trimmed to layout only: containers, grid, and display/flex helpers.
+// The full stylesheet is NOT used because its !important utilities
+// (text-muted, bg-primary, px-5, ...) clash with Tailwind class names.
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+$utilities: map-get-multiple($utilities, (
+  "display", "order", "flex", "flex-direction", "flex-grow", "flex-shrink",
+  "flex-wrap", "justify-content", "align-items", "align-content", "align-self"
+));
+
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/utilities/api";
